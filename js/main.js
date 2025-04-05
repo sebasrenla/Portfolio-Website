@@ -75,3 +75,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 }); 
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    
+    // Toggle menu when hamburger icon is clicked
+    mobileMenuBtn.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        // Change icon between bars and X
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
+    
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = nav.contains(event.target);
+        const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
+        
+        if (!isClickInsideNav && !isClickOnMenuBtn && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
