@@ -1,0 +1,67 @@
+/* Animations and Transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero animations */
+#hero .name,
+#hero .degree,
+#hero .summary,
+#hero .cta-buttons {
+    opacity: 1;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+#hero .name {
+    animation-delay: 0.2s;
+}
+
+#hero .degree {
+    animation-delay: 0.4s;
+}
+
+#hero .summary {
+    animation-delay: 0.6s;
+}
+
+#hero .cta-buttons {
+    animation-delay: 0.8s;
+}
+
+/* Section animations */
+section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effects */
+.project-card,
+.skill-category,
+.timeline-content,
+.social-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.skill-category:hover,
+.timeline-content:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+} 
