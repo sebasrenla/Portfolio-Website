@@ -641,6 +641,7 @@ footer {
         right: 80px;
     }
 } 
+
 /* Mobile Menu Styles */
 .mobile-menu-btn {
     display: none;
@@ -694,4 +695,15 @@ footer {
         padding: 10px;
         font-size: 1.2rem;
     }
+}
+
+/* Email Link Styles */
+.email-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: var(--primary-color);
 }
