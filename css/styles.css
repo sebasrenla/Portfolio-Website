@@ -432,12 +432,14 @@ footer {
     }
     
     .timeline::before {
-        left: 30px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .timeline-content {
-        max-width: calc(100% - 60px);
-        margin-left: 60px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .projects-grid,
