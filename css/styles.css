@@ -492,15 +492,33 @@ footer {
 
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .education-card {
     height: 280px;
     perspective: 1000px;
+}
+
+@media (max-width: 1200px) {
+    .education-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .education-card {
+        height: 250px;
+    }
 }
 
 .education-card-inner {
