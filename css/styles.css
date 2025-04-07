@@ -332,6 +332,7 @@ section h2 {
     margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
+    line-height: 1.4;
 }
 
 .skill-list li::before {
@@ -340,6 +341,9 @@ section h2 {
     position: absolute;
     left: 0;
     font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
 }
 
 /* Contact Section */
