@@ -23,6 +23,10 @@ const translations = {
     educationUniversity2: "Universidad de Guadalajara",
     educationDate2: "2021 - 2022",
     educationDescription2: "Started my financial journey here, completing fundamental courses in accounting, calculus, and economics before transferring.",
+    educationBBA3: "Study Abroad Program",
+    educationUniversity3: "Universidad del Norte",
+    educationDate3: "Fall 2024",
+    educationDescription3: "Participated in a cross-cultural project called 'Misión Académica 4U – Valle Diverso' focused on sustainability, circular economy, and business innovation.",
     
     // Career section
     career: "Career Journey",
@@ -117,6 +121,10 @@ const translations = {
     educationUniversity2: "Universidad de Guadalajara",
     educationDate2: "2021 - 2022",
     educationDescription2: "Comencé mi trayectoria financiera en esta universidad, completando cursos fundamentales en contabilidad, cálculo y economía, antes de transferirme.",
+    educationBBA3: "Programa de Intercambio",
+    educationUniversity3: "Universidad del Norte",
+    educationDate3: "Otoño 2024",
+    educationDescription3: "Participé en el proyecto académico 'Misión Académica 4U – Valle Diverso' enfocado en sostenibilidad, economía circular y innovación empresarial.",
     
     // Career section
     career: "Trayectoria Profesional",
