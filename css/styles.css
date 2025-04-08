@@ -570,6 +570,7 @@ footer {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 .education-card-front h4 {
@@ -730,4 +731,14 @@ footer {
 
 .email-link:hover {
     color: var(--primary-color);
+}
+
+/* Specific fix for the second education card to prevent line breaking in "(1 year)" only in English */
+html[lang="en"] [data-lang-key="educationBBA2"] {
+    white-space: nowrap;
+}
+
+/* Make sure Spanish translation can wrap properly */
+html[lang="es"] [data-lang-key="educationBBA2"] {
+    white-space: normal;
 }
